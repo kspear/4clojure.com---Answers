@@ -9,8 +9,8 @@
               (for [w words]
                 (if (matcher [l w])
                   (word-chain (disj words w) (conj chain w)))))
-            true))
-         )
+            true)))
+   
         (matcher
          [words]
          (let [[w1 w2] (sort-by count < words)
